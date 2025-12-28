@@ -1,20 +1,21 @@
 # runConnect
 
 Short description
-A short sentence: runConnect is a [small web app / portfolio piece] that demonstrates [what it does — e.g., real-time chat, connection manager, booking UI, etc.]. It contains a frontend (HTML/CSS/JS) and a backend server.
+runConnect is a small web app that demonstrates a full‑stack web project with a static frontend (HTML/CSS/JS) and a Node.js + Express backend using MongoDB for storage. It’s suitable as a portfolio piece to show frontend + backend integration.
 
 Preview / Demo
 
-- If you have a deployed demo, add the URL here.
+- Add a deployed demo URL here once available.
 - Add a screenshot under `images/` and reference it here:
 
   ![runConnect screenshot](images/screenshot.png)
 
 Tech stack
 
-- Frontend: HTML, CSS, JavaScript
-- Backend: (replace with actual tech) Node.js + Express OR Python Flask OR other — see details below
-- Data: (local file / in-memory / database) — replace as needed
+- Frontend: HTML, CSS, JavaScript (static files)
+- Backend: Node.js + Express
+- Database: MongoDB (local or Atlas)
+- Dev tools: npm, optionally nodemon
 
 Project structure
 
@@ -23,75 +24,102 @@ Project structure
   - css/
   - js/
 - backend/
-  - package.json (if Node)
+  - package.json
   - server.js / app.js
+  - routes/
+  - models/
+  - controllers/
 - images/ (screenshots)
 - README.md (this file)
 
-Features
+Prerequisites
 
-- Feature 1 — short
-- Feature 2 — short
+- Node.js (v16+ recommended)
+- npm (or yarn)
+- MongoDB (local) OR Docker OR MongoDB Atlas account
 
-Run locally — frontend only
-If you just want to open the frontend files (static HTML/JS/CSS):
+Environment (.env)
+Create `projects/runConnect/backend/.env` (do not commit) based on `.env.example` (committed). Example keys:
 
-1. Open `projects/runConnect/frontend/index.html` in the browser (double-click), or
-2. Start a simple server to avoid CORS issues:
-   ```bash
-   # from the runConnect/frontend folder
-   # Python 3:
-   python -m http.server 8000
-   # or with Node installed:
-   npx http-server -p 8000
-   ```
-3. Visit http://localhost:8000
+- MONGODB_URI — connection string for MongoDB
+- PORT — backend port (e.g., 3000)
+- JWT_SECRET — secret for signing JWTs (if used)
+- NODE_ENV — development/production
 
-Run locally — with Node.js backend (common)
-If the backend uses Node.js/Express:
+Run locally — backend (Node/Express + MongoDB)
 
-1. Open terminal and navigate to the backend folder:
+1. Start MongoDB:
+   - Local install: start `mongod` as usual, or
+   - Docker (quick):
+     ```bash
+     docker run -d -p 27017:27017 --name runconnect-mongo mongo:6
+     ```
+2. Open a terminal and start the backend:
    ```bash
    cd projects/runConnect/backend
-   ```
-2. Install dependencies:
-   ```bash
-   npm ci
-   ```
-   or
-   ```bash
-   npm install
-   ```
-3. Provide any required environment variables by creating a `.env` file (example `.env.example` can be committed with placeholder keys).
-4. Start the server:
-   ```bash
+   npm ci         # or npm install
+   # create .env (see .env.example)
+   npm run dev    # if you have nodemon script
+   # OR
    npm start
-   # or
-   node server.js
    ```
-5. By default it runs on http://localhost:3000 (or whatever port the server logs). Open the frontend and point API calls to that backend port.
+3. Backend should log the listening port (e.g., http://localhost:3000). API endpoints will be available there.
 
-If the backend is in another language (Python/Flask, etc.)
+Run locally — frontend (static)
 
-- Tell me what backend tech you used and I’ll update these instructions to match.
+1. Serve the static frontend files (so fetch/XHR works reliably):
+   ```bash
+   cd projects/runConnect/frontend
+   # Python 3 simple server:
+   python -m http.server 8000
+   # OR Node static server:
+   npx http-server -p 8000
+   ```
+2. Open http://localhost:8000 in your browser and verify API calls are pointed to `http://localhost:3000` (or the backend port).
 
-Environment / secrets
+CORS / API base URL
 
-- Do not commit real secrets. Add a `.env.example` with placeholder values and list required variables here.
+- If the frontend makes fetch requests, make sure the backend enables CORS (npm package `cors`) or that the frontend points to the correct backend origin.
+- Example Express CORS usage:
+  ```js
+  const cors = require("cors");
+  app.use(cors({ origin: "http://localhost:8000" }));
+  ```
+
+Optional: seed the database
+
+- If you have seed data, add a script (e.g., `scripts/seed.js`) and run:
+  ```bash
+  node scripts/seed.js
+  ```
+
+Useful scripts (package.json)
+
+- dev: run nodemon for development
+- start: run node server.js for production
+  (If you don’t have these, consider adding them to package.json.)
+
+Security / env notes
+
+- Do NOT commit `.env` or secrets. Add `.env` to `.gitignore`.
+- Commit a `.env.example` with placeholder names (example provided).
 
 Screenshots & assets
 
-- Save screenshots to `projects/runConnect/images/` and reference them in this README.
-- Keep images reasonably small (e.g., < 1–2 MB).
+- Put screenshots under `projects/runConnect/images/` and reference them in this README. Keep sizes moderate (< 1–2 MB).
 
 What I learned
 
-- Short bullet points about important lessons, libraries used, or tricky parts.
+- Add a short bullet list of lessons, e.g.:
+  - Implemented RESTful API endpoints with Express
+  - Connected Express to MongoDB and designed Mongoose models
+  - Handled CORS and same‑origin issues for local development
 
 Troubleshooting
 
-- If you see CORS errors, confirm the backend includes the correct CORS headers or run the frontend via a local server rather than `file://`.
+- "ECONNREFUSED" from frontend: ensure backend is running and the fetch URL matches.
+- MongoDB connection errors: check `MONGODB_URI` and that mongod is running.
 - If `npm ci` fails, try `npm install`.
 
 License
-MIT — include a short notice or reference the root LICENSE.
+This project is covered by the root LICENSE (MIT).
