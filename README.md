@@ -1,24 +1,27 @@
-# portfolio
-Hello,  I’m Christopher, a web developer who builds websites and web apps.   I recently finished my studies on University CENFOTEC. This repository collects my projects and demos.
+# Crisc Forbes — Portfolio
 
-## Featured projects
-- [Project A](projects/project-a) — one-liner and live demo link (if any)
-- [Project B](projects/project-b) — one-liner and live demo link
-- [Project C](projects/project-c) — one-liner and live demo link
+Welcome — this repository collects my university and personal web projects. Each project lives in the `projects/` folder and includes a README with instructions, screenshots, and a short description.
 
-## How to run locally
-Each project has its own README with instructions. Example:
-```bash
-# from the root
-cd projects/project-a
-npm ci
-npm start
-```
+Featured project
 
-## About me
-- Tech: JavaScript, Node, HTML, CSS, SQL
-- Email: criscforbes@gmail.com
-- Portfolio site: https://criscforbes-eng.github.io (if deployed)
+- [runConnect](projects/runConnect) — Frontend (HTML/CSS/JS) + backend (see project README).
 
-## License
-This repo is available under the MIT License — see LICENSE.
+How to run locally
+
+1. Clone this repo (if you haven't already):
+   ```bash
+   git clone git@github.com:criscforbes-eng/portfolio.git
+   cd portfolio
+   ```
+2. Go into a project folder, e.g.:
+   ```bash
+   cd projects/runConnect
+   # follow the run instructions in projects/runConnect/README.md
+   ```
+
+Contact
+
+- Email: your.email@example.com
+
+License
+This repository is available under the MIT License — see LICENSE.
