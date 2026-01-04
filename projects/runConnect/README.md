@@ -1,7 +1,7 @@
 # runConnect
 
 Short description
-runConnect is a small web app that demonstrates a full‑stack web project with a static frontend (HTML/CSS/JS) and a Node.js + Express backend using MongoDB for storage. It’s suitable as a portfolio piece to show frontend + backend integration.
+runConnect is a small web app that demonstrates a full‑stack web project with a static frontend (HTML/CSS/JS) and a Node.js + Express backend using MongoDB for storage. It’s suitable as a portfolio piece to show frontend + backend integration. The main purpose of this project is to give users the chace to create Running activities and to be part of them.
 
 Preview / Demo
 
