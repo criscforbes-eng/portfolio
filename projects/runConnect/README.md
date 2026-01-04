@@ -20,15 +20,29 @@ Tech stack
 Project structure
 
 - frontend/
-  - index.html
   - css/
   - js/
+  - img/
+  - carrerasCorredor.html
+  - carrerasOrganizador.html
+  - confirmarInscripcionCorredor.html
+  - crearCarreraOrganizador.html
+  - dashboardMenuCorredor.html
+  - dashboardMenuOrganizador.html
+  - inscripcionACarreraCorredor.html
+  - landingPage.html
+  - login.html
+  - perfilVerEditarCorredor.html
+  - perfilVerEditarOrganizador.html
+  - registroCorredor.html
+  - registroOrganizador.html
 - backend/
   - package.json
-  - server.js / app.js
+  - app.js
   - routes/
   - models/
   - controllers/
+  - doc/
 - images/ (screenshots)
 - README.md (this file)
 
