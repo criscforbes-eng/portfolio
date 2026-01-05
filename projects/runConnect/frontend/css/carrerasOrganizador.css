@@ -1,0 +1,121 @@
+/* #00CF71 (vibrant green)
+#1E293B (secure dark slate)
+#F8FAFC (clean light gray)*/
+
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/*seccion1*/
+.banner2 {
+    background-image: url("../img/banner2.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: sticky;
+    background-color: #1E293B ;
+    background-blend-mode: multiply;
+    height: 100vh;
+}
+
+.textoSct1 {
+    padding-top: 5rem;
+}
+
+.burbuja1 .uil {
+    background-color: #00CF71;
+    width: 14rem;
+    border-radius: 0.5rem;
+    margin: 0 auto; /* <-- centrado horizontal */
+    font-style: normal;
+}
+
+/*cardsSeccion1*/
+
+.card1, .card2, .card3, .card4 {
+  margin: 2rem;
+  height: 8rem;
+  width: 12rem;
+  border: 0.1rem solid #F8FAFC;
+  border-radius: 0.5rem;
+  background-color: #00CF71;
+}
+
+.card1 h3, .card2 h3, .card3 h3, .card4 h3 {
+    font-size: 2rem;
+    color: #F8FAFC;
+}
+
+.card1 h4, .card2 h4, .card3 h4, .card4 h4 {
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    color: #F8FAFC;
+}
+
+/*buscarCarrerasCard*/
+
+.buscarCarrerasCard {
+    height: 8rem;
+    width: 80%;
+    border: 0.1rem solid #F8FAFC;
+    border-radius: 0.5rem;
+    background-color: #00CF71;
+}
+
+/*seccion2*/
+
+/*tablaCarreras*/
+
+
+/*seccion3*/
+
+.sct3 {
+    background-color: #F8FAFC;
+}
+
+/*cardsSeccion3*/
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* para que se ajusten en pantallas pequeñas */
+  text-align: center;
+}
+
+.cards-container .uil{
+  color: #00CF71;
+  font-size: 4rem;
+}
+
+.card5, .card6, .card7 {
+  margin: 2rem;
+  height: 15rem;
+  width: 15rem;
+  border: 0.1rem solid #1E293B;
+  border-radius: 0.5rem;
+}
+
+.card5 h3, .card6 h3, .card7 h3 {
+    font-size: 1rem;
+    color: #00CF71;
+}
+
+.card5 h4, .card6 h4, .card7 h4 {
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+}
+
+.card5 p, .card6 p, .card7 p {
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+}

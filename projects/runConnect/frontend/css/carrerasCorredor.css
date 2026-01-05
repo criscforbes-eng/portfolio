@@ -1,0 +1,111 @@
+/* #00CF71 (vibrant green)
+#1E293B (secure dark slate)
+#F8FAFC (clean light gray)*/
+
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/*seccion1*/
+.banner3 {
+    background-image: url("../img/banner3.webp");
+    background-size: cover;
+    /*background-position: center;*/
+    background-attachment: fixed;
+    position: sticky;
+    background-color: #F8FAFC ;
+    background-blend-mode: multiply;
+    height: 100vh;
+}
+
+.btnVolverACarreras {
+    width: 20rem;
+    height: 2.5rem;
+    background-color: #F8FAFC;
+    border-radius: 3rem;
+}
+
+.btnVolverACarreras .uil{
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.tituloSect1 .parrafoSect1 {
+    padding-top: 5rem;
+    color: #1E293B;
+}
+
+.burbuja1 .uil{
+    background-color: #F8FAFC;
+    width: 14rem;
+    border-radius: 0.5rem;
+    margin: 0 auto; /* <-- centrado horizontal */
+    font-style: normal;
+}
+
+/*cardsSeccion1*/
+
+.card1, .card2, .card3, .card4 {
+  margin: 2rem;
+  height: 8rem;
+  width: 12rem;
+  border: 0.1rem solid #F8FAFC;
+  border-radius: 0.5rem;
+  background-color: #F8FAFC;
+}
+
+.card1 h3, .card2 h3, .card3 h3, .card4 h3 {
+    font-size: 2rem;
+    color: #1E293B;
+}
+
+.card1 h4, .card2 h4, .card3 h4, .card4 h4 {
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    color: #1E293B;
+}
+
+/*buscarCarrerasCard*/
+
+.buscarCarrerasCard {
+    height: 8rem;
+    width: 80%;
+    border: 0.1rem solid #F8FAFC;
+    border-radius: 0.5rem;
+    background-color: #F8FAFC;
+}
+
+/*seccion2*/
+
+/*tablaCarreras*/
+
+
+/*seccion3*/
+
+.sct3 {
+    background-color: #F8FAFC;
+}
+
+/*cardsSeccion3*/
+.boton1Sect5 {
+    background-color: #1E293B;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    width: 25rem;
+}
+
+.boton2Sect5 {
+    background-color: #F8FAFC;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    width: 25rem;
+}

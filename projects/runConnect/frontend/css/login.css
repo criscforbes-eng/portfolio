@@ -1,0 +1,147 @@
+/* #00CF71 (vibrant green)
+#1E293B (secure dark slate)
+#F8FAFC (clean light gray)*/
+
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/*seccion1*/
+.banner2 {
+    background-image: url("../img/banner2.webp");
+    background-size: cover;
+    /*background-position: center;*/
+    background-attachment: fixed;
+    position: sticky;
+    background-color: #1E293B ;
+    background-blend-mode: multiply;
+    height: 100vh;
+}
+
+
+.iconoOrganizador {
+    clip-path: circle(50% at 50% 50%);
+    background-color: #00CF71;
+    color: #F8FAFC;
+    height: 4rem;
+    width: 4rem;
+    margin: auto;
+    display: flex;              /* activa flexbox */
+    align-items: center;        /* centra verticalmente */
+    justify-content: center;    /* centra horizontalmente */
+    
+}
+
+.iconoOrganizador .uil {
+    font-size: 2.5rem;   
+    margin: auto;
+    display: flex;              /* activa flexbox */
+    align-items: center;        /* centra verticalmente */
+    justify-content: center;    /* centra horizontalmente */ 
+}
+
+.burbuja1 {
+    background-color: #00CF71;
+    width: 12rem;
+    height: 1.3rem;
+    border-radius: 0.5rem;
+    margin: 0 auto; /* <-- centrado horizontal */
+    color: #F8FAFC;
+}
+
+/*indicador seleccion usuarioTipo*/
+.burbuja1.activo {
+    background-color: #059669;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.burbuja1:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+
+.formSct1 {
+  background-color: #fff;
+  width: 40%;
+  border-radius: 3rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 25rem;
+  background-color: #F8FAFC;
+  border: none;
+  border-radius: 3rem;
+}
+
+#btnEnviar {
+  background-color: #00CF71;
+  border-color: #00CF71;
+  color: #F8FAFC;
+  border-radius: 3rem;
+  height: 2rem;
+  width: 15rem;
+}
+
+#btnToRegistrar {
+  border: none;
+  color: #436fb7;
+  background-color: #fff;
+}
+
+
+/*seccion2*/
+
+/*cards*/
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* para que se ajusten en pantallas pequeñas */
+  text-align: center;
+}
+
+.cards-container .uil{
+  color: #00CF71;
+  font-size: 4rem;
+}
+
+.card1, .card2 {
+  margin: 2rem;
+  height: 22rem;
+  width: 15rem;
+  border: 0.1rem solid #1E293B;
+  border-radius: 0.5rem;
+}
+
+.card1 h3, .card2 h3 {
+    font-size: 1rem;
+}
+
+.card1 h4, .card2 h4 {
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+}
+
+.card1 p, .card2 p {
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+}

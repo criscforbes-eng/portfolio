@@ -1,0 +1,111 @@
+/* #00CF71 (vibrant green)
+#1E293B (secure dark slate)
+#F8FAFC (clean light gray)*/
+
+
+h1 {
+    font-size: 6rem;
+    color: #00CF71;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/*seccion1*/
+.banner2 {
+    background-image: url("../img/banner2.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: sticky;
+    background-color: #1E293B ;
+    background-blend-mode: multiply;
+    height: 80vh;
+}
+
+.btnVolverACarreras {
+    width: 20rem;
+    height: 2.5rem;
+    background-color: #F8FAFC;
+    border-radius: 3rem;
+}
+
+.btnVolverACarreras .uil{
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.burbuja {
+    background-color: #00CF71;
+    width: 20rem;
+    height: 1.8rem;
+    border-radius: 3rem;
+    margin: 0 auto; /* <-- centrado horizontal */
+    color: #F8FAFC;
+}
+
+/*seccion2*/
+
+.sct2 {
+    background-color: #fff;
+}
+
+.formSct2 {
+  background-color: #F8FAFC;
+  width: 40%;
+  border-radius: 3rem;
+  padding-left: 2rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 25rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 3rem;
+}
+
+.cardInfo {
+    background-color: #00CF71;
+    width: auto;
+    height: auto;
+    border-radius: 1rem;
+    margin: 0 auto; /* <-- centrado horizontal */
+    color: #F8FAFC;
+    padding-left: 2rem;
+}
+
+.sctBotones {
+    display: flex;              /* activa flexbox */
+    align-items: right;        /* centra verticalmente */
+    justify-content: right;  
+}
+
+.boton1Sect2 {
+    background-color: #F8FAFC;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    width: 10rem;
+}
+
+.boton2Sect2 {
+    background-color: #00CF71;
+    color: #F8FAFC;
+    border-color: #00CF71;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    width: 10rem;
+}
+

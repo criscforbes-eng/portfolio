@@ -1,0 +1,202 @@
+/* #00CF71 (vibrant green)
+#1E293B (secure dark slate)
+#F8FAFC (clean light gray)*/
+
+
+h1 {
+    font-size: 6rem;
+    color: #1E293B;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/*seccion1*/
+.banner3 {
+    background-image: url("../img/banner3.webp");
+    background-size: cover;
+    /*background-position: center;*/
+    background-attachment: fixed;
+    position: sticky;
+    background-color: #F8FAFC ;
+    background-blend-mode: multiply;
+    height: 70vh;
+}
+
+.btnVolverACarreras {
+    width: 20rem;
+    height: 2.5rem;
+    background-color: #F8FAFC;
+    color: #1E293B;
+    border-color: #1E293B;
+    border-radius: 3rem;
+}
+
+.btnVolverACarreras .uil{
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.btnVolverACarreras:hover {
+    width: 20rem;
+    height: 2.5rem;
+    background-color: #1E293B;
+    color: #F8FAFC;
+    border-color: #F8FAFC;
+    border-radius: 3rem;
+}
+
+/*seccion2*/
+
+.sct2CardsContainer {
+    display: flex;
+    gap: 1rem;   /* separación horizontal entre card1 y card2 */
+}
+
+/*card1*/
+
+.sct2Card1 {
+    background-color: #F8FAFC;
+    border-radius: 1.5rem;
+}
+
+.card1Titulo {
+    display:flex;
+    gap: 0.5rem;
+    align-items: center
+}
+
+.card1Titulo .uil {
+    font-size: 2rem;
+}
+
+.card1Titulo h2 {
+  margin: 0; 
+  padding: 0;
+}
+
+/*card2*/
+
+.sct2Card2 {
+    background-color: #F8FAFC;
+    border-radius: 1.5rem;
+}
+
+.card2Titulo {
+    display:flex;
+    gap: 0.5rem;
+    align-items: center
+}
+
+.card2Titulo .uil {
+    font-size: 2rem;
+}
+
+.card2Titulo h2 {
+  margin: 0; 
+  padding: 0;
+}
+
+.inscripcion, .total {
+    display: flex;
+    gap: 10rem;
+    margin-top: 0.7rem;
+}
+
+
+/*seccion3*/
+
+
+.sct3CardsContainer {
+    display: flex;
+    gap: 1rem;   /* separación horizontal entre card1 y card2 */
+}
+
+/*card1*/
+
+.sct3Card1 {
+    background-color: #F8FAFC;
+    border-radius: 1.5rem;
+}
+
+.burbujaPago {
+    border-radius: 1.5rem;
+    background-color: #1E293B;
+    color: white;
+    padding: 1rem;
+}
+
+
+
+/*card2*/
+
+.sct3Card2 {
+    background-color: #1E293B;
+    border-radius: 1.5rem;
+    color: white;
+}
+
+
+.inscripcion, .total {
+    display: flex;
+    gap: 10rem;
+    margin-top: 0.7rem;
+}
+
+.numeroCorredor .uil {
+    font-size: 7rem;
+    
+}
+
+/*Botones*/
+
+.sct3Botones {
+    display: flex;              /* activa flexbox */
+    align-items: left;        /* centra verticalmente */
+    justify-content: left;  
+}
+
+.boton1Sect3 {
+    background-color: #F8FAFC;
+    color: #1E293B;
+    border-color: #1E293B;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    width: 10rem;
+}
+
+.boton1Sect3:hover {
+    background-color: #1E293B;
+    color: #F8FAFC;
+    border-color: #F8FAFC;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    width: 10rem;
+}
+
+.boton2Sect3 {
+    background-color: #1E293B;
+    color: #F8FAFC;
+    border-color: #F8FAFC;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    width: 15rem;
+}
+
+.boton2Sect3:hover {
+    background-color: #00CF71;
+    color: #F8FAFC;
+    border-color: #00CF71;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    width: 15rem;
+}

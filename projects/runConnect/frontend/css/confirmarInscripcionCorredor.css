@@ -1,0 +1,120 @@
+/* #00CF71 (vibrant green)
+#1E293B (secure dark slate)
+#F8FAFC (clean light gray)*/
+
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+
+/*seccion1*/
+.banner3 {
+    background-image: url("../img/banner3.webp");
+    background-size: cover;
+    /*background-position: center;*/
+    background-attachment: fixed;
+    position: sticky;
+    background-color: #F8FAFC ;
+    background-blend-mode: multiply;
+    height: 200vh;
+}
+
+/*cards*/
+
+/*card1*/
+
+.card1 {
+    background-color: #1E293B;
+    width: 25rem;
+    color: white;
+    border-radius: 1.5rem;
+}
+
+/*card2*/
+
+.card2 {
+    background-color: #F8FAFC;
+    width: 25rem;
+    border-radius: 1.5rem;
+
+}
+
+.card2Titulo {
+    display:flex;
+    gap: 0.5rem;
+    align-items: center
+}
+
+.card2Titulo .uil {
+    font-size: 2rem;
+}
+
+.card2Titulo h2 {
+  margin: 0; 
+  padding: 0;
+}
+
+/*card3*/
+
+.card3 {
+    background-color: #F8FAFC;
+    width: 25rem;
+    border-radius: 1.5rem;
+}
+
+/*botones*/
+
+.sct3Botones {
+    display: flex;              /* activa flexbox */
+    align-items: center;        /* centra verticalmente */
+    justify-content: center;  
+}
+
+.boton1Sect3 {
+    background-color: #F8FAFC;
+    color: #1E293B;
+    border-color: #1E293B;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    width: 10rem;
+}
+
+.boton1Sect3:hover {
+    background-color: #1E293B;
+    color: #F8FAFC;
+    border-color: #F8FAFC;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    width: 10rem;
+}
+
+.boton2Sect3 {
+    background-color: #1E293B;
+    color: #F8FAFC;
+    border-color: #F8FAFC;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    width: 15rem;
+}
+
+.boton2Sect3:hover {
+    background-color: #00CF71;
+    color: #F8FAFC;
+    border-color: #00CF71;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    width: 15rem;
+}

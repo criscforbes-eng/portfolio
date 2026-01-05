@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DashboardMenuOrganizador</title>
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon-32x32.png">
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- libreria iconscout - Unicons -->  
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
+    <!-- fuente --> 
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <!-- css -->
+    <link rel="stylesheet" href="css/dashboardMenuOrganizador.css"> 
+  </head>
+  <body>
+    <!-- header1 -->
+    <header>
+        <nav class="navbar1 navbar-expand-lg sticky-top">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+
+            <!-- Logotipo -->
+            <a class="navbar-brand d-flex align-items-center" href="dashboardMenuOrganizador.html">
+                <img src="img/logo.png" alt="Logotipo empresarial" class="logo img-fluid">
+                <span class="ms-2 fw-bold">RunConnect</span>
+            </a>
+
+            <!-- Iconos sociales alineados a la derecha -->
+
+            <!-- Botón hamburguesa (menú responsive) -->
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú de navegación -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                <!-- Grupo derecho -->
+                <ul class="iconosMenu ms-auto mb-2 mb-lg-0 text-center">
+                <li class="nav-item">
+                    <a class="nav-link optmenu" href="dashboardMenuOrganizador.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link optmenu" href="dashboardMenuOrganizador.html">Mis Carreras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link optmenu" href="crearCarreraOrganizador.html">Crear Carrera</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link optmenu" href="perfilVerEditarOrganizador.html">Mi Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link optmenu" id="btnSalir">Salir</a>
+                </li>
+                </ul>
+
+            </div>
+            </div>
+        </nav>
+    </header>
+
+     <!-- header2 -->
+     <header class="header2">
+        <div class="header2Sect1">
+          <h3 id="lblCorreoOrganizador"></h3>
+          <p id="lblRolOrganizador"></p>
+        </div>
+        <div class="header2Sect2 ms-auto">
+          <button type="button" class="btnCrearCarrera mt-2">Crear Carrera</button>
+        </div>
+     </header>
+
+    <!-- seccion1 -->
+    <section class="container-fluid">
+        <div class="row text-center sct1Cards-container">
+            <!-- card1 -->
+            <div class="sct1Card1">
+                <i class="uil uil-calendar"></i>
+                <h2>Total Carreras</h2>
+                <h1>12</h1>
+                <p>Eventos Creados</p>
+            </div>
+            <!-- card2 -->
+             <div class="sct1Card2">
+                <i class="uil uil-check-circle"></i>
+                <h2>Carreras Disponibles</h2>
+                <h1>5</h1>
+                <p>Con cupos abiertos</p>
+            </div>
+            <!-- card3 -->
+             <div class="sct1Card3">
+                <i class="uil uil-exclamation-circle"></i>
+                <h2>Sin Cupo</h2>
+                <h1>3</h1>
+                <p>Cupo completo</p>
+            </div>
+            <!-- card4 -->
+             <div class="sct1Card4">
+                <i class="uil uil-trophy"></i>
+                <h2>Finalizadas</h2>
+                <h1>4</h1>
+                <p>Eventos Completados</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- seccion2 -->
+    <section class="container">
+        <div class="row tblCarreras">
+
+            <!-- Lista Carreras -->
+            <div class="sct2Card1">
+                <h2>Gestion de Carreras</h2>
+                <p>Administra tus eventos y monitorea inscripciones</p>
+                 <!-- carreras -->
+                <div class="carrera1">
+                    <table class="table mb-4">
+                    <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Lugar</th>
+                            <th scope="col">Fecha y Hora de Inicio</th>
+                            <th scope="col">Fecha de Creacion</th>
+                            <th scope="col">Precio en colones</th>
+                            <th scope="col">Inscripciones Maximas</th>
+                            <th scope="col">Corredores Inscritos</th>
+                            <th scope="col">Organizador</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Imagen Publicitaria</th>
+                        </tr>
+                    </thead>
+                        <tbody id="tblCarreras"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- seccion3 -->
+    <section class="container">
+        <div class="container sct3Card1 mb-5">
+            <h1>Acciones Rapidas</h1>
+            <div class="row">
+                <!-- sct3Btn1 -->
+                <div class="col-md-6 text-center mt-3">
+                    <button type="button" class="sct3Btn1"><i class="uil uil-search"> Ver mis carreras</i></button>
+                </div>
+                <!-- sct3Btn2 -->
+                <div class="col-md-6 text-center mt-3">
+                    <button type="button" class="sct3Btn2"><i class="uil uil-plus"> Crear nueva carrera</i></button>
+                </div>
+            </div>
+            <div class="row">
+                <!-- sct3Btn3 -->
+                <div class="col-md-6 sct3Btn3 text-center mt-3">
+                    <i class="uil uil-statistics"></i>
+                    <h2>Ver Estadisticas</h2>
+                </div>
+                <!-- sct3Btn4 -->
+                <div class="col-md-6 sct3Btn4 text-center mt-3">
+                    <i class="uil uil-users-alt"></i>
+                    <h2>Ver Participantes</h2>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <!-- scripts -->
+    <script src="/codigoCliente/js/controllers/dashboardMenuOrganizador.js" type="module"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,330 @@
+/* #00CF71 (vibrant green)
+#1E293B (secure dark slate)
+#F8FAFC (clean light gray)*/
+
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/*menuNavegacion*/
+
+/* -------------------------- HEADER 1 -------------------------- */
+
+.navbar1 {
+  background-color: #F8FAFC;
+  padding: 0.5rem 1rem;
+}
+
+.logo {
+  height: 4rem;
+  width: 4rem;
+}
+
+/* Iconos sociales */
+.iconosMenu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.iconosMenu .nav-link {
+  color: #1E293B;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  border: solid 0.06rem #1E293B;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+}
+
+.iconosMenu .nav-link:hover {
+  color: #00CF71;
+  /*text-decoration: underline;*/
+}
+
+.optmenu:hover {
+  background-color: #fff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.optmenu:active {
+  background-color: #fff;
+  color: #00CF71;
+}
+
+/* Botón hamburguesa */
+.navbar-toggler {
+  background-color: #FFF6E0;
+  border: 2px solid #FFF6E0;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,124,177)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+/* -------------------------- HEADER 2 -------------------------- */
+
+.header2 {
+  display: flex;
+  background-color: #F8FAFC;
+  padding: 1.25rem 1rem;
+  letter-spacing: 1px;
+}
+
+.header2Sect2 {
+  margin-right: 10rem;
+}
+
+.btnCrearCarrera {
+  font-size: 1.2rem;
+  background-color: #00CF71;
+  border-radius: 0.5rem;
+  border-color: #00CF71;
+  color: white;
+}
+
+.btnCrearCarrera:hover {
+  font-size: 1.2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  border-color: #00CF71;
+  color: #00CF71;
+}
+
+/*seccion1*/
+/*cards*/
+
+.sct1Cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* para que se ajusten en pantallas pequeñas */
+  text-align: center;
+}
+
+.sct1Cards-container .uil{
+  color: #F8FAFC;
+  font-size: 3rem;
+}
+
+.sct1Card1, .sct1Card2, .sct1Card3, .sct1Card4 {
+  background-color: #00CF71;
+  color: #F8FAFC;
+  margin: 2rem;
+  height: 15rem;
+  width: 15rem;
+  border: 0.1rem solid #00CF71;
+  border-radius: 0.5rem;
+}
+
+/*seccion2*/
+
+.sct2Card1 {
+  background-color: #F8FAFC;
+  border-radius: 0.5rem;
+  margin: 1rem 0;   /* SOLO vertical */
+}
+
+.sct2Card2, .sct2Card3 {
+    background-color: #F8FAFC;
+  border-radius: 0.5rem;
+  margin: 1rem 0;   /* SOLO vertical */
+  width: 20rem;
+}
+
+.col-md-5:nth-child(2) {
+    padding-left: 2rem;   /* separa la columna derecha (card,2 y card3) de la izquierda (card1) */
+}
+
+/*sct2Card1*/
+
+/*carrera1 sct2Card1*/
+.carrera1, .carrera2, .carrera3, .carrera4 {
+background-color: #00CF71;
+border: 0.1rem solid #00CF71;
+border-radius: 0.5rem;
+padding: 0.5rem;
+margin: 0.5rem;
+
+}
+
+.carrera1info .uil, .carrera2info .uil, .carrera3info .uil, .carrera4info .uil {
+color: #F8FAFC;
+}
+
+.carrera1info, .carrera2info, .carrera3info, .carrera4info {
+    display: flex;
+    gap: 1rem;
+}
+
+.carrera1Burbujas, .carrera2Burbujas, .carrera3Burbujas, .carrera4Burbujas {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.carrera1Burbuja, .carrera3Burbuja {
+    background-color: #F8FAFC;
+    color: #00CF71;
+    border-radius: 1.5rem;
+    border-color: #F8FAFC;
+    height: 1.5rem;
+    width: 6rem;
+}
+
+.carrera2Burbuja {
+    background-color: #F8FAFC;
+    color: #a13702;
+    border-radius: 1.5rem;
+    border-color: #a13702;
+    height: 1.5rem;
+    width: 6rem;
+}
+
+.carrera4Burbuja {
+    background-color: #F8FAFC;
+    color: #78848e;
+    border-radius: 1.5rem;
+    border-color: #78848e;
+    height: 1.5rem;
+    width: 6rem;
+}
+
+.carrera1BotonGestionar, .carrera2BotonGestionar, .carrera3BotonGestionar, .carrera4BotonGestionar {
+    background-color: #F8FAFC;
+    color: dark;
+    border-radius: 1.5rem;
+    border-color: #F8FAFC;
+    height: 1.8rem;
+    width: 6rem;
+}
+
+.carrera1BotonGestionar:hover, .carrera2BotonGestionar:hover, .carrera3BotonGestionar:hover, .carrera4BotonGestionar:hover {
+    background-color: #00CF71;
+    color: white;
+    border-radius: 1.5rem;
+    border-color: white;
+    height: 1.8rem;
+    width: 6rem;
+    
+}
+
+/*sct2Card2*/
+
+.estadistica1, .estadistica2, .estadistica3 {
+    display: flex;
+    gap: 6rem;
+    margin-top: 0.7rem;
+}
+
+.estadisticasBotonReporte {
+    background-color: #00CF71;
+    color: #F8FAFC;
+    border-radius: 1.5rem;
+    border-color: #F8FAFC;
+    height: 1.8rem;
+    width: 13rem;
+
+}
+
+.estadisticasBotonReporte:hover {
+    background-color: #1E293B;
+    color: #F8FAFC;
+    border-radius: 1.5rem;
+    border-color: #F8FAFC;
+    height: 1.8rem;
+    width: 13rem;
+
+}
+
+/*sct2Card3*/
+
+.actividadReciente1Info, .actividadReciente2Info  {
+    display: flex;
+    gap: 8rem;
+}
+
+.actividadReciente1Burbuja,
+.actividadReciente2Burbuja{
+    /*background-color: #F8FAFC;*/
+    color: #00CF71;
+    border-radius: 1.5rem;
+    border-color: #00CF71;
+    height: 1.5rem;
+    width: 6rem;
+}
+
+.lineaActividadReciente {
+    width: 18rem;
+    color: #78848e;
+    padding: 1rem;
+}
+
+
+/*seccion3*/
+
+.sct3Card1{
+    background-color: #F8FAFC;
+    border-radius: 1.5rem;
+    border-color: #F8FAFC;
+    width: 60%;
+
+}
+
+.sct3Btn1, .sct3Btn2 {
+    background-color: #00CF71;
+    border-radius: 1.5rem;
+    border-color: #F8FAFC;
+    color: #F8FAFC;
+    width: 18rem;
+    height: 6.5rem;
+    margin: 1rem;
+}
+
+.sct3Btn1:hover, .sct3Btn2:hover {
+    background-color: #1E293B;
+    border-radius: 1.5rem;
+    border-color: #F8FAFC;
+    color: #F8FAFC;
+    width: 18rem;
+    height: 6.5rem;
+    margin: 1rem;
+}
+
+.sct3Btn1 .uil, .sct3Btn2 .uil{
+    font-size: 2rem;
+    font-style: normal;
+}
+
+.sct3Btn3, .sct3Btn4 {
+    background-color: #F8FAFC;;
+    border-radius: 1.5rem;
+    border: solid 0.1rem #00CF71;
+    width: 18rem;
+    height: 6.5rem;
+    margin: 1rem;
+}
+
+.sct3Btn3 .uil, .sct3Btn4 .uil{
+    font-size: 2.5rem;
+    color: #00CF71;
+}
