@@ -8,7 +8,7 @@ Preview / Demo
 - Add a deployed demo URL here once available.
 - Add a screenshot under `images/` and reference it here:
 
-  ![runConnect screenshot](images/screenshot.png)
+  ![tapaProducciones screenshot](images/screenshot.png)
 
 Tech stack
 
