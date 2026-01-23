@@ -1,0 +1,105 @@
+/* #00CF71 (vibrant green)
+#1E293B (secure dark slate)
+#F8FAFC (clean light gray)*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+/* -------------------------- HEADER 1 -------------------------- */
+
+.navbar1 {
+  background-color: #F8FAFC;
+  padding: 0.5rem 1rem;
+}
+
+.logo {
+  height: 4rem;
+  width: 4rem;
+}
+
+/* Iconos sociales */
+.iconosMenu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.iconosMenu .nav-link {
+  color: #1E293B;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  border: solid 0.06rem #1E293B;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+}
+
+.iconosMenu .nav-link:hover {
+  color: #00CF71;
+  /*text-decoration: underline;*/
+}
+
+.optmenu:hover {
+  background-color: #fff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.optmenu:active {
+  background-color: #fff;
+  color: #00CF71;
+}
+
+/* Botón hamburguesa */
+.navbar-toggler {
+  background-color: #FFF6E0;
+  border: 2px solid #FFF6E0;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,124,177)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+/* -------------------------- HEADER 2 -------------------------- */
+
+.header2 {
+  display: flex;
+  background-color: #F8FAFC;
+  padding: 1.25rem 1rem;
+  letter-spacing: 1px;
+}
+
+.header2Sect2 {
+  margin-right: 10rem;
+}
+
+.btnCrearCarrera {
+  font-size: 1.2rem;
+  background-color: #00CF71;
+  border-radius: 0.5rem;
+  border-color: #00CF71;
+  color: white;
+}
+
+.btnCrearCarrera:hover {
+  font-size: 1.2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  border-color: #00CF71;
+  color: #00CF71;
+}
+
+
+
+
+

@@ -1,0 +1,172 @@
+/* #00CF71 (vibrant green)
+#1E293B (secure dark slate)
+#F8FAFC (clean light gray)*/
+
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/*seccion1*/
+.banner3 {
+    background-image: url("../img/banner3.webp");
+    background-size: cover;
+    /*background-position: center;*/
+    background-attachment: fixed;
+    position: sticky;
+    background-color: #F8FAFC ;
+    background-blend-mode: multiply;
+    height: 190vh;
+}
+
+.iconoOrganizador {
+    clip-path: circle(50% at 50% 50%);
+    background-color: #1E293B;
+    color: #F8FAFC;
+    height: 4rem;
+    width: 4rem;
+    margin: auto;
+    display: flex;              /* activa flexbox */
+    align-items: center;        /* centra verticalmente */
+    justify-content: center;    /* centra horizontalmente */
+    
+}
+
+.iconoOrganizador .uil {
+    font-size: 2.5rem;   
+    margin: auto;
+    display: flex;              /* activa flexbox */
+    align-items: center;        /* centra verticalmente */
+    justify-content: center;    /* centra horizontalmente */ 
+}
+
+.burbuja1 {
+    background-color: #1E293B;
+    width: 22rem;
+    height: 1.3rem;
+    border-radius: 0.5rem;
+    margin: 0 auto; /* <-- centrado horizontal */
+    color: #F8FAFC;
+}
+
+#btnEditar {
+  background-color: #1E293B;
+  border-color: #1E293B;
+  color: #F8FAFC;
+  border-radius: 3rem;
+  height: 2rem;
+  width: 15rem;
+}
+
+
+.formSct1 {
+  background-color: #fff;
+  width: 40%;
+  border-radius: 3rem;
+  height: 175vh;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 25rem;
+  background-color: #F8FAFC;
+  border: none;
+  border-radius: 3rem;
+}
+
+/*botones*/
+.boton1Sect1 {
+    background-color: #F8FAFC;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+.boton2Sect1 {
+    background-color: #1E293B;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    width: 10rem;
+}
+
+/*burbuja2*/
+.burbuja2 {
+  background-color: #1E293B;
+  width: auto;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 0 auto; /* <-- centrado horizontal */
+  color: #F8FAFC;
+
+}
+
+/*iconosBurbuja2*/
+/* cada ícono + texto en una línea */
+/* Elimina márgenes del p dentro de item-linea */
+.item-linea p {
+  margin: 0; 
+  padding: 0;
+}
+
+/* Alineación perfecta en columna */
+.burbuja2 .item-linea {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* Opcional: evita que los iconos se descuadren por line-height */
+.item-linea i {
+  line-height: 1;
+}
+
+
+/*seccion2*/
+
+/*cards*/
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* para que se ajusten en pantallas pequeñas */
+  text-align: center;
+}
+
+.cards-container .uil{
+  color: #1E293B;
+  font-size: 4rem;
+}
+
+.card1, .card2, .card3 {
+  margin: 2rem;
+  height: 15rem;
+  width: 15rem;
+  border: 0.1rem solid #1E293B;
+  border-radius: 0.5rem;
+}
+
+.card1 h3, .card2 h3, .card3 h3 {
+    font-size: 1rem;
+}
+
+.card1 p, .card2 p, .card3 p {
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+}

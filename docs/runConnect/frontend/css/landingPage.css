@@ -1,0 +1,189 @@
+/* #00CF71 (vibrant green)
+#1E293B (secure dark slate)
+#F8FAFC (clean light gray)*/
+
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/*seccion1*/
+.banner1 {
+    background-image: url("../img/banner2.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: sticky;
+    background-color: #1E293B ;
+    background-blend-mode: multiply;
+    height: 100vh;
+}
+
+.textoSct1 {
+    padding-top: 5rem;
+}
+
+.burbuja1 {
+    background-color: #00CF71;
+    width: 18rem;
+    border-radius: 0.5rem;
+    margin: 0 auto; /* <-- centrado horizontal */
+}
+
+.boton1Sect1 {
+    background-color: #00CF71;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    width: 25rem;
+}
+
+.boton2Sect1 {
+    background-color: #F8FAFC;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    width: 25rem;
+}
+
+/*seccion2*/
+
+/*cards*/
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* para que se ajusten en pantallas pequeñas */
+  text-align: center;
+}
+
+.cards-container .uil{
+  color: #00CF71;
+  font-size: 4rem;
+}
+
+.card1, .card2, .card3 {
+  margin: 2rem;
+  height: 17rem;
+  width: 15rem;
+  border: 0.1rem solid #1E293B;
+  border-radius: 0.5rem;
+}
+
+.card1 h3, .card2 h3, .card3 h3 {
+    font-size: 1rem;
+}
+
+.card1 h4, .card2 h4, .card3 h4 {
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+}
+
+.card1 p, .card2 p, .card3 p {
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+}
+
+/*seccion3*/
+.sct3 {
+    background-color: #F8FAFC;
+}
+
+.card4, .card5, .card6 {
+    margin: 2rem;
+    height: 17rem;
+    width: 15rem;
+    border: 0.1rem solid #1E293B;
+    border-radius: 0.5rem;
+}
+
+.card4 h4, .card5 h4, .card6 h4 {
+     font-size: 0.8rem;
+    padding-top: 0.5rem;  
+}
+
+.sct3Iconos .uil {
+    font-style: normal;
+    font-size: 1rem;
+    color: black;
+}
+
+.boton1Sect3 {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: #F8FAFC;
+    background-color: #00CF71;
+}
+
+/*seccion4*/
+.card7, .card8, .card9 {
+    margin: 2rem;
+    height: 17rem;
+    width: 15rem;
+    border: 0.1rem solid #1E293B;
+    border-radius: 0.5rem;
+}
+
+.card7 h4, .card8 h4, .card9 h4 {
+     font-size: 0.8rem;
+    padding-top: 0.5rem;  
+}
+
+.card7 p, .card8 p, .card9 p {
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+}
+
+.sct4 .uil {
+    color: #1E293B;
+    font-size: 1.5rem;
+    color: transparent;
+    background: linear-gradient(#00CF71 50%, #1E293B 50%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px #1E293B; /* borde */
+}
+
+.testimonialInitials {
+    clip-path: circle(50% at 50% 50%);
+    background-color: #00CF71;
+    color: #F8FAFC;
+    height: 4rem;
+    width: 4rem;
+    margin-left: 1rem;
+    display: flex;              /* activa flexbox */
+    align-items: center;        /* centra verticalmente */
+    justify-content: center;    /* centra horizontalmente */
+}
+
+#cardIniciales {
+    font-size: 2.5rem;
+
+}
+
+/*seccion5*/
+
+.sct5 {
+background: linear-gradient(#00CF71, #1E293B);
+}
+
+.boton1Sect5 {
+    background-color: #00CF71;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    width: 25rem;
+}
+
+.boton2Sect5 {
+    background-color: #F8FAFC;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    width: 25rem;
+}

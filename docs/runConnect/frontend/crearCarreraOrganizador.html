@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>crearCarreraOrganizador</title>
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon-32x32.png">
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- libreria iconscout - Unicons -->  
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
+    <!-- fuente --> 
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <!-- css -->
+    <link rel="stylesheet" href="css/crearCarreraOrganizador.css"> 
+  </head>
+  <body>
+        <!-- seccion1 -->
+    <section class="banner2 pt-5">
+        <div>
+            <button type="button" class="btnVolverACarreras mt-3"><i class="uil uil-arrow-left"><a href="dashboardMenuOrganizador.html">Volver a mis Carreras</a></i></button>
+        </div>
+        <div class="container text-center mt-5">
+            <div class="burbuja">
+                <h3>Eventos Costa Rica S.A.</h3>
+            </div>
+            <h1 class="pt-3">Crear Nueva Carrera</h1>
+            <h3 class="text-light pt-3">Completa el formulario para crear una nueva carrera recreativa</h3>
+        </div>
+    </section>
+
+    <!-- seccion2 -->
+    <section class="sct2">
+        <div class="container formSct2 mt-3 pt-3 pb-3">
+            <h2 class="">Informacion de la carrera</h2>
+            <h3 class="">Todos los campos marcados con * son obligatorios</h3>
+
+            <form id="crearCarreraForm" enctype="multipart/form-data">
+
+                <!-- Nombre -->
+                <label for="nombre">Nombre de la Carrera *</label><br>
+                <i class="uil uil-file-alt"></i>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Carrera del Café 5K" ><br><br>
+
+                <!-- Fecha y hora del evento -->
+                <label for="fechaHoraInicio">Fecha y hora de inicio *</label><br>
+                <input type="datetime-local" id="fechaHoraInicio" name="fechaHoraInicio" ><br><br>
+
+                <!-- Lugar -->
+                <label for="lugar">Lugar del evento *</label><br>
+                <i class="uil uil-location-point"></i>
+                <input type="text" id="lugar" name="lugar" placeholder="Ej: Parque Central, San José" ><br><br>
+
+                <!-- Precio -->
+                <label for="precio">Precio de inscripción (₡) *</label><br>
+                <i class="uil uil-dollar-alt"></i>
+                <input type="number" id="precio" name="precio" min="0" step="0.01" ><br><br>
+
+                <!-- Cupos -->
+                <label for="maxInscripciones">Cantidad máxima de inscripciones *</label><br>
+                <i class="uil uil-users-alt"></i>
+                <input type="number" id="maxInscripciones" name="maxInscripciones" min="1" ><br><br>
+
+                <!-- Imagen -->
+                <label for="imagen">Imagen del evento</label><br>
+                <input type="file" id="imagen" name="imagen" accept="image/*"><br><br>
+
+                <!-- Estado (opcional, se define automáticamente como 'disponible') -->
+                <label for="estado">Estado inicial</label><br>
+                <select id="estado" name="estado">
+                    <option value="disponible" selected>Disponible</option>
+                    <option value="sin_cupo">Sin cupo</option>
+                    <option value="finalizada">Finalizada</option>
+                </select><br><br>
+
+                <!-- Botones -->
+                <div class="container sctBotones pb-5">
+                    <div class="row pt-5">
+                    <div class="col-md-6">
+                        <button type="reset" class="boton1Sect2"><a href="dashboardMenuOrganizador.html">Cancelar</a></button>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="submit" id="btnEnviar" class="boton2Sect2">Crear Carrera</button>
+                    </div>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+  
+    <!-- libreria SWEETALERT-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- script app -->
+    <script src="/codigoCliente/js/controllers/crearCarreraOrganizador.js" type="module"></script>
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
