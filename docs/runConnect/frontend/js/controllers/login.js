@@ -98,7 +98,7 @@ loginForm.addEventListener("submit", async function (e) {
             }
 
             // Redirigir a dashboard corredor
-            window.location.href = "codigoCliente/dashboardMenuCorredor.html";
+            window.location.href = "dashboardMenuCorredor.html";
             
             } else {
                 // Para organizadores, obtener organizador real y guardar su _id
@@ -114,7 +114,7 @@ loginForm.addEventListener("submit", async function (e) {
                 }
 
                 // Redirigir a dashboard organizador
-                window.location.href = "codigoCliente/dashboardMenuOrganizador.html";
+                window.location.href = "dashboardMenuOrganizador.html";
             }
 
             console.log("Login como:", tipoUsuarioSeleccionado);
